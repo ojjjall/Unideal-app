@@ -1,0 +1,45 @@
+{
+  "name": "Service",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Tutoring",
+        "Assignment Help",
+        "Language",
+        "Programming",
+        "Design",
+        "Other"
+      ]
+    },
+    "price_per_hour": {
+      "type": "number"
+    },
+    "provider_name": {
+      "type": "string"
+    },
+    "provider_email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "available",
+        "unavailable"
+      ],
+      "default": "available"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "price_per_hour"
+  ]
+}

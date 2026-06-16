@@ -1,0 +1,49 @@
+{
+  "name": "Asset",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Tools",
+        "Equipment",
+        "Books",
+        "Electronics",
+        "Sports",
+        "Other"
+      ]
+    },
+    "deposit_amount": {
+      "type": "number"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "available",
+        "borrowed",
+        "unavailable"
+      ],
+      "default": "available"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "deposit_amount"
+  ]
+}

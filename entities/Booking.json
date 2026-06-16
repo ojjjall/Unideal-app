@@ -1,0 +1,68 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "asset_name": {
+      "type": "string"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "service_title": {
+      "type": "string"
+    },
+    "booking_type": {
+      "type": "string",
+      "enum": [
+        "asset",
+        "service"
+      ]
+    },
+    "borrower_email": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "booking_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "return_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "location": {
+      "type": "string"
+    },
+    "deposit_amount": {
+      "type": "number"
+    },
+    "deposit_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "refunded"
+      ],
+      "default": "pending"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "completed",
+        "cancelled"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "booking_type",
+    "status"
+  ]
+}

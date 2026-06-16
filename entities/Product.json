@@ -1,0 +1,74 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Product title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in RM"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Books",
+        "Electronics",
+        "Fashion",
+        "Furniture",
+        "Food & Beverage",
+        "Sports",
+        "Stationery",
+        "Other"
+      ]
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "Brand New",
+        "Like New",
+        "Good",
+        "Fair",
+        "Poor"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "sold",
+        "reserved",
+        "deleted"
+      ],
+      "default": "active"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Product image URLs (max 5)"
+    },
+    "seller_name": {
+      "type": "string"
+    },
+    "seller_email": {
+      "type": "string"
+    },
+    "view_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "price",
+    "category",
+    "condition"
+  ]
+}

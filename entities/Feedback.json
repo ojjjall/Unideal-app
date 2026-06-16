@@ -1,0 +1,30 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "Bug Report",
+        "Feature Request",
+        "Improvement",
+        "Complaint",
+        "Compliment"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "title",
+    "description"
+  ]
+}

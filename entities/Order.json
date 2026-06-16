@@ -1,0 +1,51 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "order_number": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "product_title": {
+      "type": "string"
+    },
+    "product_image": {
+      "type": "string"
+    },
+    "seller_email": {
+      "type": "string"
+    },
+    "buyer_email": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "Wallet",
+        "Credit Card",
+        "E-Wallet",
+        "Online Banking"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "completed",
+        "cancelled",
+        "refunded"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "order_number",
+    "product_title",
+    "amount"
+  ]
+}

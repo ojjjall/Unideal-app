@@ -1,0 +1,51 @@
+{
+  "name": "SupportTicket",
+  "type": "object",
+  "properties": {
+    "subject": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Technical Issue",
+        "Account Problem",
+        "Payment Issue",
+        "Listing Problem",
+        "Safety Concern",
+        "Other"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Normal",
+        "High",
+        "Urgent"
+      ],
+      "default": "Normal"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_progress",
+        "resolved",
+        "closed"
+      ],
+      "default": "open"
+    },
+    "user_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "subject",
+    "category",
+    "description"
+  ]
+}
