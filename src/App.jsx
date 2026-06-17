@@ -17,7 +17,7 @@ import ResetPassword from '@/pages/ResetPassword';
 
 // Main Pages
 import Home from '@/pages/Home';
-import ProductDetail from '@/pages/ProductDetail';
+import ProductDetail from '@/pages/ProductDetails';
 import AddProduct from '@/pages/AddProduct';
 import MyItems from '@/pages/MyItems';
 import Chats from '@/pages/Chats';
