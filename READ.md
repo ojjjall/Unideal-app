@@ -1,8 +1,40 @@
-**Welcome to your Base44 project** 
+# 🛍️ Unideal App
 
-**About**
+A student marketplace application for buying and selling preloved items within UTM members.
 
-## Module to Frontend Script Mapping
+## 📋 About
+
+This project is developed as part of the Application Development course. It allows UTM students to:
+- Buy and sell used items within the university community
+- Manage user profiles and listings
+- Secure authentication and authorization
+
+**Welcome to your Base44 project**
+
+View and Edit your app on [Base44.com](http://Base44.com)
+
+This project contains everything you need to run your app locally.
+
+**Edit the code in your local development environment**
+
+Any change pushed to the repo will also be reflected in the Base44 Builder.
+
+---
+
+## 🏗️ Project Structure
+src/
+├── api/ # API client and services
+├── components/ # Reusable UI components
+│ ├── layout/ # Layout components
+│ └── ui/ # UI components
+├── hooks/ # Custom React hooks
+├── lib/ # Utility functions
+├── pages/ # Page components
+└── utils/ # Helper functions
+
+---
+
+## 🗂️ Module to Frontend Script Mapping
 
 <table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
   <tr>
@@ -56,30 +88,42 @@
   </tr>
 </table>
 
-**Prerequisites:** 
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
 
 1. Clone the repository using the project's Git URL 
 2. Navigate to the project directory
 3. Install dependencies: `npm install`
 4. Create an `.env.local` file and set the right environment variables
-
-```
 VITE_BASE44_APP_ID=your_app_id
 VITE_BASE44_APP_BASE_URL=your_backend_url
 
 e.g.
 VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
 VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
 
 Run the app: `npm run dev`
 
-**Publish your changes**
+### Publishing Changes
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+1. Push your changes to GitHub
+2. Open [Base44.com](http://Base44.com)
+3. Click on **Publish**
 
-**Docs & Support**
+---
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+## 👥 Contributors
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+- [@ojjjall](https://github.com/ojjjall) - Project Lead
+
+## 📚 Documentation & Support
+
+- [Base44 Documentation](https://docs.base44.com/Integrations/Using-GitHub)
+- [Support](https://app.base44.com/support)
+
+## 📝 License
+
+This project is for educational purposes.
