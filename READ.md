@@ -2,13 +2,59 @@
 
 **About**
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## Module to Frontend Script Mapping
 
-This project contains everything you need to run your app locally.
-
-**Edit the code in your local development environment**
-
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+<table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border: 1px solid black; background-color: #f2f2f2; padding: 8px;">Module</th>
+    <th style="border: 1px solid black; background-color: #f2f2f2; padding: 8px;">Frontend Script</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">Authentication</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <a href="src/components/ui/AuthLayout.jsx">AuthLayout.jsx</a> • 
+      <a href="src/components/ui/GoogleIcon.jsx">GoogleIcon.jsx</a> • 
+      <a href="src/components/ui/ProtectedRoute.jsx">ProtectedRoute.jsx</a> • 
+      <a href="src/components/ui/UserNotRegisteredError.jsx">UserNotRegisteredError.jsx</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">App Layout</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <a href="src/components/layout/AppLayout.jsx">AppLayout.jsx</a> • 
+      <a href="src/components/layout/BottomNav.jsx">BottomNav.jsx</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">Shared Components</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <a href="src/components/layout/shared/FigureLabel.jsx">FigureLabel.jsx</a> • 
+      <a href="src/components/layout/shared/ProductCard.jsx">ProductCard.jsx</a> • 
+      <a href="src/components/layout/shared/StatCard.jsx">StatCard.jsx</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">API Client</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <a href="src/api/base44Client.js">base44Client.js</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">App Core</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <a href="src/App.jsx">App.jsx</a> • 
+      <a href="src/main.jsx">main.jsx</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">Utilities & Hooks</td>
+    <td style="border: 1px solid black; padding: 8px;">
+      <a href="src/hooks/use-mobile.jsx">use-mobile.jsx</a> • 
+      <a href="src/lib/utils.js">utils.js</a> • 
+      <a href="src/lib/app-params.js">app-params.js</a>
+    </td>
+  </tr>
+</table>
 
 **Prerequisites:** 
 
