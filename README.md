@@ -32,6 +32,7 @@ src/
 ├── pages/ # Page components
 └── utils/ # Helper functions
 
+
 ---
 
 ## 🗂️ Module to Frontend Script Mapping
@@ -105,6 +106,7 @@ e.g.
 VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
 VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
 
+
 Run the app: `npm run dev`
 
 ### Publishing Changes
@@ -118,6 +120,7 @@ Run the app: `npm run dev`
 ## 👥 Contributors
 
 - [@ojjjall](https://github.com/ojjjall) - Project Lead
+- [Add your team members here]
 
 ## 📚 Documentation & Support
 
