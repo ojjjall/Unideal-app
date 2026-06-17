@@ -20,7 +20,7 @@ import Home from '@/pages/Home';
 import ProductDetail from '@/pages/ProductDetails';
 import AddProduct from '@/pages/AddProduct';
 import MyItems from '@/pages/MyItem';
-import Chats from '@/pages/Chats';
+import Chats from '@/pages/Chat';
 import ChatWindow from '@/pages/ChatWindow';
 import Profile from '@/pages/Profile';
 import EditProfile from '@/pages/EditProfile';
