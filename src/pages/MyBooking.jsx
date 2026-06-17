@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowLeft, Calendar, MapPin, DollarSign } from 'lucide-react';
-import FigureLabel from '@/components/shared/FigureLabel';
+import FigureLabel from "../components/layout/shared/FigureLabel";
 
 const bookings = [
   { id: '1', item: 'Soldering Iron Kit', type: 'asset', date: '18 May 2026', location: 'KTF Lobby', deposit: 30, depositStatus: 'paid', status: 'confirmed' },

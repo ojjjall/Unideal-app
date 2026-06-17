@@ -1,12 +1,9 @@
-import StudentSales from "@/pages/StudentSales.jsx";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, DollarSign, Package, Download } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import StatCard from '@/components/shared/StatCard';
-import FigureLabel from '@/components/shared/FigureLabel';
 
 const salesData = [
   { month: 'Oct', revenue: 120 },
@@ -22,6 +19,25 @@ const topCategories = [
   { name: 'Electronics', items: 3, revenue: 450 },
   { name: 'Fashion', items: 5, revenue: 120 },
 ];
+
+// Simple StatCard component inline
+const StatCard = ({ icon: Icon, label, value }) => {
+  return (
+    <Card className="border-0 shadow-sm">
+      <CardContent className="p-4">
+        <div className="flex items-center gap-3">
+          <div className="p-2 rounded-full bg-primary/10">
+            <Icon className="w-4 h-4 text-primary" />
+          </div>
+          <div>
+            <p className="text-xs text-gray-500">{label}</p>
+            <p className="text-lg font-bold">{value}</p>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default function StudentSales() {
   return (
@@ -73,7 +89,6 @@ export default function StudentSales() {
           </ResponsiveContainer>
         </CardContent>
       </Card>
-      <FigureLabel number="5.6" title="Student Sales Dashboard" />
     </div>
   );
 }

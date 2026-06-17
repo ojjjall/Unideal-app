@@ -1,10 +1,10 @@
-import { Toaster } from "@/components/ui/toaster"
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClientInstance } from '@/lib/query-client'
+import { Toaster } from "@/components/ui/toaster";
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClientInstance } from '@/lib/query-client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
+// import UserNotRegisteredError from "@/components/ui/UserNotRegisteredError.jsx";
 
 // Layout
 import AppLayout from '@/components/layout/AppLayout';
@@ -49,13 +49,13 @@ import StudentSales from '@/pages/StudentSales';
 // Admin
 import AdminPanel from '@/pages/AdminPanel';
 import AdminVerifications from '@/pages/AdminVerification';
-import AdminUsers from '@/pages/AdminUsers';
+import AdminUsers from '@/pages/AdminUser';
 import ReportDetails from '@/pages/ReportDetails';
 
 // Service & Asset Sharing
 import AcademicServices from '@/pages/AcademicServices';
 import AssetListing from '@/pages/AssetListing';
-import MyBookings from '@/pages/MyBookings';
+import MyBookings from '@/pages/MyBooking';
 
 // Figures
 import Figure21 from '@/pages/Figure21';
@@ -74,7 +74,8 @@ const AuthenticatedApp = () => {
 
   if (authError) {
     if (authError.type === 'user_not_registered') {
-      return <UserNotRegisteredError />;
+      // return <UserNotRegisteredError />;
+      return <div className="p-4 text-center">User not registered. Please contact support.</div>;
     } else if (authError.type === 'auth_required') {
       navigateToLogin();
       return null;
@@ -93,7 +94,7 @@ const AuthenticatedApp = () => {
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/add-product" element={<AddProduct />} />
-        <Route path="/my-items" element={<MyItem />} />
+        <Route path="/my-items" element={<MyItems />} />
         <Route path="/chats" element={<Chats />} />
         <Route path="/profile" element={<Profile />} />
       </Route>
@@ -106,12 +107,12 @@ const AuthenticatedApp = () => {
       <Route path="/top-up" element={<TopUp />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/payment" element={<Payment />} />
-      <Route path="/my-orders" element={<MyOrder />} />
+      <Route path="/my-orders" element={<MyOrders />} />
       <Route path="/order-receipt" element={<OrderReceipt />} />
       <Route path="/chat/:id" element={<ChatWindow />} />
       <Route path="/block-report" element={<BlockReport />} />
       <Route path="/notifications" element={<Notifications />} />
-      <Route path="/notification-settings" element={<NotificationSetting />} />
+      <Route path="/notification-settings" element={<NotificationSettings />} />
       <Route path="/help" element={<HelpCenter />} />
       <Route path="/contact-support" element={<ContactSupport />} />
       <Route path="/feedback" element={<SendFeedback />} />
@@ -148,7 +149,7 @@ function App() {
         </Router>
       </QueryClientProvider>
     </AuthProvider>
-  )
+  );
 }
 
-export default App
+export default App;
