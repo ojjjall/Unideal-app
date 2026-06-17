@@ -1,4 +1,4 @@
-import ProductCard from '../components/layout/shared/ProductCard.jsx';
+import ProductCard from '../components/layout/shared/ProductCard';
 import React, { useState, useEffect } from 'react';
 import { ProductAPI, AnalyticsAPI } from '../api/unidealApi';
 

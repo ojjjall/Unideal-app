@@ -31,12 +31,12 @@ import Wallet from '@/pages/Wallet';
 import TopUp from '@/pages/TopUp';
 import Checkout from '@/pages/Checkout';
 import Payment from '@/pages/Payment';
-import MyOrders from '@/pages/MyOrders';
+import MyOrders from '@/pages/MyOrder';
 import OrderReceipt from '@/pages/OrderReceipt';
 
 // Communication & Support
-import Notifications from '@/pages/Notifications';
-import NotificationSettings from '@/pages/NotificationSettings';
+import Notifications from '@/pages/Notification';
+import NotificationSettings from '@/pages/NotificationSetting';
 import BlockReport from '@/pages/BlockReport';
 import HelpCenter from '@/pages/HelpCenter';
 import ContactSupport from '@/pages/ContactSupport';
@@ -48,7 +48,7 @@ import StudentSales from '@/pages/StudentSales';
 
 // Admin
 import AdminPanel from '@/pages/AdminPanel';
-import AdminVerifications from '@/pages/AdminVerifications';
+import AdminVerifications from '@/pages/AdminVerification';
 import AdminUsers from '@/pages/AdminUsers';
 import ReportDetails from '@/pages/ReportDetails';
 
@@ -93,7 +93,7 @@ const AuthenticatedApp = () => {
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/add-product" element={<AddProduct />} />
-        <Route path="/my-items" element={<MyItems />} />
+        <Route path="/my-items" element={<MyItem />} />
         <Route path="/chats" element={<Chats />} />
         <Route path="/profile" element={<Profile />} />
       </Route>
@@ -106,12 +106,12 @@ const AuthenticatedApp = () => {
       <Route path="/top-up" element={<TopUp />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/payment" element={<Payment />} />
-      <Route path="/my-orders" element={<MyOrders />} />
+      <Route path="/my-orders" element={<MyOrder />} />
       <Route path="/order-receipt" element={<OrderReceipt />} />
       <Route path="/chat/:id" element={<ChatWindow />} />
       <Route path="/block-report" element={<BlockReport />} />
       <Route path="/notifications" element={<Notifications />} />
-      <Route path="/notification-settings" element={<NotificationSettings />} />
+      <Route path="/notification-settings" element={<NotificationSetting />} />
       <Route path="/help" element={<HelpCenter />} />
       <Route path="/contact-support" element={<ContactSupport />} />
       <Route path="/feedback" element={<SendFeedback />} />
