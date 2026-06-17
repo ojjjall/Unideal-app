@@ -1,0 +1,60 @@
+{
+  "name": "WalletTransactions",
+  "fields": [
+    {
+      "name": "wallet_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Wallets entity"
+    },
+    {
+      "name": "student_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "enum": ["topup", "payment", "refund", "withdrawal", "fee"],
+      "required": true,
+      "description": "Transaction type"
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "required": true,
+      "minimum": 0,
+      "description": "Transaction amount in RM"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Transaction description"
+    },
+    {
+      "name": "reference_id",
+      "type": "string",
+      "description": "Reference to order ID or top-up ID"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "enum": ["pending", "completed", "failed", "cancelled"],
+      "default": "pending",
+      "description": "Transaction status"
+    },
+    {
+      "name": "payment_method",
+      "type": "string",
+      "enum": ["wallet", "credit_card", "duitnow", "ewallet"],
+      "description": "Payment method used"
+    }
+  ],
+  "permissions": {
+    "read": "owner",
+    "create": "authenticated",
+    "update": "admin",
+    "delete": "admin"
+  }
+}

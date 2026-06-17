@@ -1,0 +1,60 @@
+{
+  "name": "Transactions",
+  "fields": [
+    {
+      "name": "order_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Order entity"
+    },
+    {
+      "name": "seller_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity (seller)"
+    },
+    {
+      "name": "buyer_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity (buyer)"
+    },
+    {
+      "name": "product_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Product entity"
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "required": true,
+      "minimum": 0,
+      "description": "Transaction amount"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "enum": ["pending", "completed", "cancelled", "refunded"],
+      "default": "pending",
+      "description": "Transaction status"
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "description": "Product category"
+    },
+    {
+      "name": "commission",
+      "type": "number",
+      "default": 0,
+      "description": "Platform commission (if applicable)"
+    }
+  ],
+  "permissions": {
+    "read": "admin",
+    "create": "authenticated",
+    "update": "admin",
+    "delete": "admin"
+  }
+}

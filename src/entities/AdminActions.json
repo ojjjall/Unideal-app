@@ -1,0 +1,48 @@
+{
+  "name": "AdminActions",
+  "fields": [
+    {
+      "name": "admin_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to admin user ID"
+    },
+    {
+      "name": "target_user_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity"
+    },
+    {
+      "name": "action_type",
+      "type": "string",
+      "enum": ["suspend", "reinstate", "warn", "delete_listing", "ban"],
+      "required": true,
+      "description": "Type of admin action"
+    },
+    {
+      "name": "reason",
+      "type": "string",
+      "required": true,
+      "description": "Reason for the action"
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "description": "Suspension duration in days (if applicable)"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "enum": ["pending", "completed", "reversed"],
+      "default": "pending",
+      "description": "Action status"
+    }
+  ],
+  "permissions": {
+    "read": "admin",
+    "create": "admin",
+    "update": "admin",
+    "delete": "admin"
+  }
+}

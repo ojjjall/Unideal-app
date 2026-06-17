@@ -1,0 +1,45 @@
+{
+  "name": "UserActivityLog",
+  "fields": [
+    {
+      "name": "student_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity"
+    },
+    {
+      "name": "activity_type",
+      "type": "string",
+      "enum": ["login", "logout", "view_product", "create_listing", "purchase", "message"],
+      "required": true,
+      "description": "Type of activity"
+    },
+    {
+      "name": "timestamp",
+      "type": "datetime",
+      "required": true,
+      "description": "When the activity occurred"
+    },
+    {
+      "name": "ip_address",
+      "type": "string",
+      "description": "IP address of the user"
+    },
+    {
+      "name": "user_agent",
+      "type": "string",
+      "description": "Browser/device information"
+    },
+    {
+      "name": "metadata",
+      "type": "object",
+      "description": "Additional activity data (JSON)"
+    }
+  ],
+  "permissions": {
+    "read": "admin",
+    "create": "authenticated",
+    "update": "none",
+    "delete": "admin"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Students",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Base44 user ID"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "description": "UTM student email"
+    },
+    {
+      "name": "matric",
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "description": "Student matric number"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Full name"
+    },
+    {
+      "name": "phone",
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "description": "Residential address"
+    },
+    {
+      "name": "faculty",
+      "type": "string",
+      "description": "Faculty of study"
+    },
+    {
+      "name": "year",
+      "type": "number",
+      "description": "Year of study (1-4)"
+    },
+    {
+      "name": "profile_image",
+      "type": "string",
+      "description": "URL to profile picture"
+    },
+    {
+      "name": "verification_status",
+      "type": "string",
+      "enum": ["pending", "verified", "rejected"],
+      "default": "pending",
+      "description": "Student identity verification status"
+    },
+    {
+      "name": "matric_card_path",
+      "type": "string",
+      "description": "Path to uploaded matric card image"
+    },
+    {
+      "name": "email_verified",
+      "type": "boolean",
+      "default": false,
+      "description": "Email verification status"
+    },
+    {
+      "name": "account_status",
+      "type": "string",
+      "enum": ["active", "suspended", "deleted"],
+      "default": "active",
+      "description": "Account status"
+    },
+    {
+      "name": "reputation_score",
+      "type": "number",
+      "default": 0,
+      "description": "Average rating from reviews"
+    },
+    {
+      "name": "total_transactions",
+      "type": "number",
+      "default": 0,
+      "description": "Total number of transactions"
+    }
+  ],
+  "permissions": {
+    "read": "public",
+    "create": "authenticated",
+    "update": "owner",
+    "delete": "admin"
+  }
+}

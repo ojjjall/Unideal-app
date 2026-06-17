@@ -1,0 +1,58 @@
+{
+  "name": "UserReports",
+  "fields": [
+    {
+      "name": "reporter_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity (reporter)"
+    },
+    {
+      "name": "reported_user_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity (reported user)"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "enum": ["scam_fraud", "fake_listing", "harassment", "offensive", "other"],
+      "required": true,
+      "description": "Report category"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "description": "Detailed description of the issue"
+    },
+    {
+      "name": "evidence_path",
+      "type": "string",
+      "description": "Path to uploaded evidence file"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "enum": ["pending", "under_review", "resolved", "dismissed"],
+      "default": "pending",
+      "description": "Report status"
+    },
+    {
+      "name": "admin_notes",
+      "type": "string",
+      "description": "Admin notes on the report"
+    },
+    {
+      "name": "resolved_at",
+      "type": "datetime",
+      "description": "When report was resolved"
+    }
+  ],
+  "permissions": {
+    "read": "admin",
+    "create": "authenticated",
+    "update": "admin",
+    "delete": "admin"
+  }
+}

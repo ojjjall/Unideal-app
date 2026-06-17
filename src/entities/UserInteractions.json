@@ -1,0 +1,39 @@
+{
+  "name": "UserInteractions",
+  "fields": [
+    {
+      "name": "student_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity"
+    },
+    {
+      "name": "product_id",
+      "type": "string",
+      "description": "Reference to Product entity (if applicable)"
+    },
+    {
+      "name": "interaction_type",
+      "type": "string",
+      "enum": ["view", "click", "search", "favorite", "purchase"],
+      "required": true,
+      "description": "Type of interaction"
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "description": "Product category of the interaction"
+    },
+    {
+      "name": "duration_seconds",
+      "type": "number",
+      "description": "Time spent viewing (in seconds)"
+    }
+  ],
+  "permissions": {
+    "read": "owner",
+    "create": "authenticated",
+    "update": "owner",
+    "delete": "owner"
+  }
+}

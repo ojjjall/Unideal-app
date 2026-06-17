@@ -1,0 +1,56 @@
+{
+  "name": "VerificationSubmissions",
+  "fields": [
+    {
+      "name": "student_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity"
+    },
+    {
+      "name": "matric_number",
+      "type": "string",
+      "required": true,
+      "description": "Matric number from card"
+    },
+    {
+      "name": "matric_card_path",
+      "type": "string",
+      "required": true,
+      "description": "Path to uploaded matric card image"
+    },
+    {
+      "name": "extracted_text",
+      "type": "string",
+      "description": "OCR extracted text from card"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "enum": ["pending", "approved", "rejected"],
+      "default": "pending",
+      "description": "Verification status"
+    },
+    {
+      "name": "admin_id",
+      "type": "string",
+      "description": "Admin who reviewed the submission"
+    },
+    {
+      "name": "admin_notes",
+      "type": "string",
+      "description": "Admin notes on the verification"
+    },
+    {
+      "name": "reviewed_at",
+      "type": "datetime",
+      "description": "When the submission was reviewed"
+    }
+  ],
+  "permissions": {
+    "read": "admin",
+    "create": "authenticated",
+    "update": "admin",
+    "delete": "admin"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Wallets",
+  "fields": [
+    {
+      "name": "student_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference to Students entity"
+    },
+    {
+      "name": "balance",
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "description": "Current wallet balance in RM"
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "default": "MYR",
+      "description": "Currency code"
+    },
+    {
+      "name": "is_active",
+      "type": "boolean",
+      "default": true,
+      "description": "Whether wallet is active"
+    },
+    {
+      "name": "last_transaction_date",
+      "type": "datetime",
+      "description": "Date of last transaction"
+    }
+  ],
+  "permissions": {
+    "read": "owner",
+    "create": "authenticated",
+    "update": "owner",
+    "delete": "admin"
+  }
+}
