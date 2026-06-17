@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { ArrowLeft, Search, Package } from 'lucide-react';
-import FigureLabel from '@/components/shared/FigureLabel';
+import FigureLabel from "@/components/shared/FigureLabel";
 
 const assets = [
   { id: '1', name: 'Soldering Iron Kit', category: 'Tools', owner: 'Ahmad Haziq', deposit: 30, status: 'available' },
