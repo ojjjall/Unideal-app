@@ -3,7 +3,6 @@ import { base44 } from './base44Client';
 // ============================================================
 // STUDENT API
 // ============================================================
-
 export const StudentAPI = {
   // Create a new student profile
   create: async (data) => {
@@ -18,7 +17,9 @@ export const StudentAPI = {
   // Get student by email
   getByEmail: async (email) => {
     return await base44.entities.Students.filter({
-      where: { email: { $eq: email } }
+      where: {
+        email: { $eq: email }
+      }
     });
   },
 
@@ -27,17 +28,17 @@ export const StudentAPI = {
     return await base44.entities.Students.update(id, data);
   },
 
-  // Get all students (admin only)
-  getAll: async () => {
-    return await base44.entities.Students.list();
-  },
-
   // Verify student identity
   verifyStudent: async (id, data) => {
     return await base44.entities.Students.update(id, {
       verification_status: data.status,
       ...data
     });
+  },
+
+  // Get all students (admin only)
+  getAll: async () => {
+    return await base44.entities.Students.list();
   },
 
   // Suspend a student (admin)
@@ -77,7 +78,6 @@ export const StudentAPI = {
 // ============================================================
 // WALLET API
 // ============================================================
-
 export const WalletAPI = {
   // Get or create wallet for a student
   getByStudent: async (studentId) => {
@@ -85,7 +85,7 @@ export const WalletAPI = {
       where: { student_id: { $eq: studentId } }
     });
 
-    if (wallets.length > 0) {
+    if (wallets && wallets.length > 0) {
       return wallets[0];
     }
 
@@ -99,7 +99,7 @@ export const WalletAPI = {
   // Get wallet balance
   getBalance: async (studentId) => {
     const wallet = await WalletAPI.getByStudent(studentId);
-    return wallet.balance || 0;
+    return wallet?.balance || 0;
   },
 
   // Top up wallet
@@ -139,7 +139,7 @@ export const WalletAPI = {
   // Process payment (holds funds in escrow)
   processPayment: async (studentId, amount, description, referenceId) => {
     const wallet = await WalletAPI.getByStudent(studentId);
-
+    
     if ((wallet.balance || 0) < amount) {
       throw new Error('Insufficient balance');
     }
@@ -175,10 +175,6 @@ export const WalletAPI = {
       throw new Error('Transaction is not pending');
     }
 
-    // Find seller's wallet
-    // Note: This would need the seller_id from the transaction
-    // Implementation depends on your Order/Transaction flow
-
     // Update transaction status
     await base44.entities.WalletTransactions.update(transactionId, {
       status: 'completed'
@@ -190,7 +186,6 @@ export const WalletAPI = {
   // Get transaction history
   getHistory: async (studentId) => {
     const wallet = await WalletAPI.getByStudent(studentId);
-
     return await base44.entities.WalletTransactions.filter({
       where: { wallet_id: { $eq: wallet.id } },
       orderBy: { created_date: 'desc' }
@@ -201,7 +196,6 @@ export const WalletAPI = {
 // ============================================================
 // ADMIN ACTIONS API
 // ============================================================
-
 export const AdminActionsAPI = {
   create: async (data) => {
     return await base44.entities.AdminActions.create(data);
@@ -224,7 +218,6 @@ export const AdminActionsAPI = {
 // ============================================================
 // REPORTS API
 // ============================================================
-
 export const ReportsAPI = {
   create: async (data) => {
     return await base44.entities.UserReports.create(data);
@@ -256,7 +249,6 @@ export const ReportsAPI = {
 // ============================================================
 // VERIFICATION API
 // ============================================================
-
 export const VerificationAPI = {
   submit: async (data) => {
     return await base44.entities.VerificationSubmissions.create(data);
@@ -289,6 +281,8 @@ export const VerificationAPI = {
   },
 
   reject: async (id, adminId, notes) => {
+    const submission = await base44.entities.VerificationSubmissions.get(id);
+
     await base44.entities.VerificationSubmissions.update(id, {
       status: 'rejected',
       admin_id: adminId,
@@ -296,7 +290,7 @@ export const VerificationAPI = {
       reviewed_at: new Date().toISOString()
     });
 
-    await base44.entities.Students.update(studentId, {
+    await base44.entities.Students.update(submission.student_id, {
       verification_status: 'rejected'
     });
 
@@ -307,7 +301,6 @@ export const VerificationAPI = {
 // ============================================================
 // PRODUCT API
 // ============================================================
-
 export const ProductAPI = {
   create: async (data) => {
     return await base44.entities.Products.create(data);
@@ -330,7 +323,7 @@ export const ProductAPI = {
     };
 
     // Search by name or description
-    if (query) {
+    if (query && query.trim().length > 0) {
       whereClause.$or = [
         { name: { $contains: query } },
         { description: { $contains: query } }
@@ -387,7 +380,6 @@ export const ProductAPI = {
 // ============================================================
 // ORDER API
 // ============================================================
-
 export const OrderAPI = {
   create: async (data) => {
     return await base44.entities.Orders.create(data);
@@ -419,7 +411,6 @@ export const OrderAPI = {
 // ============================================================
 // CHAT API
 // ============================================================
-
 export const ChatAPI = {
   getConversations: async (studentId) => {
     return await base44.entities.Conversations.filter({
@@ -461,7 +452,6 @@ export const ChatAPI = {
 // ============================================================
 // ANALYTICS API
 // ============================================================
-
 export const AnalyticsAPI = {
   // Log user activity
   logActivity: async (data) => {
@@ -484,10 +474,7 @@ export const AnalyticsAPI = {
 
   // Get sales analytics (admin)
   getSalesAnalytics: async (period = 'month') => {
-    // Implementation depends on your data structure
-    // This would aggregate Transaction data
     const transactions = await base44.entities.Transactions.list();
-    // Process and aggregate data
     return transactions;
   },
 
@@ -505,7 +492,6 @@ export const AnalyticsAPI = {
 // ============================================================
 // SERVICES & ASSETS API
 // ============================================================
-
 export const ServiceAPI = {
   create: async (data) => {
     return await base44.entities.Services.create(data);
@@ -536,7 +522,6 @@ export const AssetAPI = {
   },
 
   borrow: async (assetId, borrowerId, deposit) => {
-    // Create booking with deposit
     return await base44.entities.Bookings.create({
       asset_id: assetId,
       borrower_email: borrowerId,
