@@ -19,7 +19,7 @@ import ResetPassword from '@/pages/ResetPassword';
 import Home from '@/pages/Home';
 import ProductDetail from '@/pages/ProductDetails';
 import AddProduct from '@/pages/AddProduct';
-import MyItems from '@/pages/MyItems';
+import MyItems from '@/pages/MyItem';
 import Chats from '@/pages/Chats';
 import ChatWindow from '@/pages/ChatWindow';
 import Profile from '@/pages/Profile';

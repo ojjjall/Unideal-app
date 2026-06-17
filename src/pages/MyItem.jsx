@@ -11,7 +11,7 @@ const myProducts = [
   { id: '4', title: 'Lab Coat (Size M)', category: 'Fashion', price: 20, condition: 'Good', images: ['https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=300'] },
 ];
 
-export default function MyItems() {
+export default function MyItem() {
   const [showDelete, setShowDelete] = useState(false);
 
   return (

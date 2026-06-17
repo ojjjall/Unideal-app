@@ -13,7 +13,7 @@ const conversations = [
   { id: '4', name: 'Ahmad Firdaus', product: 'Re: Desk Lamp', message: 'Still available?', time: '3h ago', unread: 1, online: false },
 ];
 
-export default function Chats() {
+export default function Chat() {
   return (
     <div className="p-4 space-y-4">
       <h1 className="text-xl font-bold pt-2">Messages</h1>
