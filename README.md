@@ -1,13 +1,24 @@
 # 🛍️ UniDeal App
 
-A student marketplace application for buying and selling preloved items within UTM members.
+A student marketplace application for buying and selling preloved items within the UTM community.
+
+---
 
 ## 📋 About
 
-This project is developed as part of the Application Development course. It allows UTM students to:
-- Buy and sell used items within the university community
-- Manage user profiles and listings
-- Secure authentication and authorization
+This project is developed as part of the Application Development Project I course. UniDeal provides a secure platform for UTM students to buy, sell, exchange, and share products and services within the university community.
+
+### Main Functions
+- User Registration and Authentication
+- Product Listing and Marketplace
+- Student Verification
+- Chat and Communication
+- Service and Asset Sharing
+- Analytics and Monitoring
+- Administrative Management
+
+---
+
 
   ## Team Members
 
@@ -20,23 +31,26 @@ This project is developed as part of the Application Development course. It allo
 | 5 | Zahra Aulia Putri | A24CS9006 | Service & Asset Sharing Subsystem |
 
 
-## Project Overview
 
-UniDeal provides a secure marketplace exclusively for UTM students. The platform supports product trading, service sharing, asset borrowing, communication, analytics, and administrative monitoring.
+## 📌 Project Overview
+
+UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi Malaysia (UTM) students. The platform enables students to trade products, share services, communicate safely, and access analytical insights within a trusted university environment.
 
 
-**Welcome to your Base44 project**
 
-View and Edit your app on [Base44.com](http://Base44.com)
+## 🛠️ Tech Stack
 
-This project contains everything you need to run your app locally.
-
-**Edit the code in your local development environment**
-
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+| Layer | Technology |
+|---------|-----------|
+| Frontend | React.js (Vite) |
+| UI Framework | Tailwind CSS + shadcn/ui |
+| Backend | Node.js + Express.js |
+| Database | MySQL |
+| Design | Figma |
+| Version Control | Git + GitHub |
 
 ---
-## System Architecture
+## 🧩 System Architecture
 
 ### User Management Subsystem
 - User Registration & Login
@@ -50,7 +64,7 @@ Any change pushed to the repo will also be reflected in the Base44 Builder.
 
 ### Analytics & Insights Subsystem
 - User Activity Dashboard
-- Sales & Performance
+- Sales & Performance Analytics
 
 ### Communication & Support Subsystem
 - Chat & Messaging
@@ -58,9 +72,10 @@ Any change pushed to the repo will also be reflected in the Base44 Builder.
 - Help Centre & Feedback
 
 ### Service & Asset Sharing Subsystem
-- Request & Provide Academic Service
-- List & Borrow Asset
-- Manage Booking & Deposit
+- Academic Service Request & Offer
+- Asset Borrowing & Lending
+- Booking & Deposit Management
+
 
 ---
 ## User Management Subsystem
@@ -190,6 +205,40 @@ Unideal-app/
 
 ---
 
+## ✨ Features
+
+### User Management
+- User Registration
+- User Login
+- Password Recovery
+- Profile Management
+- Student Verification
+- Admin Verification Review
+- User Access Management
+
+### Product Marketplace
+- Product Listing
+- Product Search
+- Product Details
+- Payment Management
+
+### Analytics
+- User Activity Monitoring
+- Sales Performance Tracking
+
+### Communication
+- Chat System
+- Notifications
+- Feedback Submission
+- Report Management
+
+### Service & Asset Sharing
+- Academic Services
+- Asset Lending
+- Booking Management
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -218,14 +267,26 @@ Run the app: `npm run dev`
 
 ## 👥 Contributors
 
-- [@ojjjall](https://github.com/ojjjall) - Project Lead
-- [Add your team members here]
+## 👥 Contributors
+
+- @ojjjall — Project Lead
+- Garrah Thabit Mohammed
+- Lauza Amru Kasyafa
+- Saleh Nabil Ahmed
+- Zeng Yuxi
+- Zahra Aulia Putri
+
+---
 
 ## 📚 Documentation & Support
+
+- Base44 Documentation
+- GitHub Repository Management
+- Project Development Documentation
 
 - [Base44 Documentation](https://docs.base44.com/Integrations/Using-GitHub)
 - [Support](https://app.base44.com/support)
 
 ## 📝 License
 
-This project is for educational purposes.
+This project is developed for educational purposes under the Application Development Project I course.
