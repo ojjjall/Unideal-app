@@ -267,8 +267,6 @@ Run the app: `npm run dev`
 
 ## 👥 Contributors
 
-## 👥 Contributors
-
 - @ojjjall — Project Lead
 - Garrah Thabit Mohammed
 - Lauza Amru Kasyafa
