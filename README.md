@@ -1,4 +1,4 @@
-# 🛍️ Unideal App
+# 🛍️ UniDeal App
 
 A student marketplace application for buying and selling preloved items within UTM members.
 
@@ -8,6 +8,22 @@ This project is developed as part of the Application Development course. It allo
 - Buy and sell used items within the university community
 - Manage user profiles and listings
 - Secure authentication and authorization
+
+  ## Team Members
+
+| No. | Name | Matric No. | Responsibility |
+|---|---|---|---|
+| 1 | Garrah Thabit Mohammed | A24CS4013 | User Management Subsystem |
+| 2 | Lauza Amru Kasyafa | A24CS4018 | Product & Market Subsystem |
+| 3 | Saleh Nabil Ahmed | A24CS0028 | Analytics & Insights Subsystem |
+| 4 | Zeng Yuxi | A24CS4041 | Communication & Support Subsystem |
+| 5 | Zahra Aulia Putri | A24CS9006 | Service & Asset Sharing Subsystem |
+
+
+## Project Overview
+
+UniDeal provides a secure marketplace exclusively for UTM students. The platform supports product trading, service sharing, asset borrowing, communication, analytics, and administrative monitoring.
+
 
 **Welcome to your Base44 project**
 
@@ -20,20 +36,86 @@ This project contains everything you need to run your app locally.
 Any change pushed to the repo will also be reflected in the Base44 Builder.
 
 ---
+## System Architecture
 
-## 🏗️ Project Structure
-src/
-├── api/ # API client and services
-├── components/ # Reusable UI components
-│ ├── layout/ # Layout components
-│ └── ui/ # UI components
-├── hooks/ # Custom React hooks
-├── lib/ # Utility functions
-├── pages/ # Page components
-└── utils/ # Helper functions
+### User Management Subsystem
+- User Registration & Login
+- Profile & Verification
+- Access Control & Authorization
 
+### Product & Market Subsystem
+- Product Listing & Management
+- Search & Recommendation
+- Purchasing & Payment
+
+### Analytics & Insights Subsystem
+- User Activity Dashboard
+- Sales & Performance
+
+### Communication & Support Subsystem
+- Chat & Messaging
+- Meet-up Coordination & Notifications
+- Help Centre & Feedback
+
+### Service & Asset Sharing Subsystem
+- Request & Provide Academic Service
+- List & Borrow Asset
+- Manage Booking & Deposit
 
 ---
+## User Management Subsystem
+
+**Developer:** Garrah Thabit
+
+## 📁 Project Structure
+
+```text
+Unideal-app/
+│
+├── src/
+│   │
+│   ├── api/
+│   │   ├── base44Client.js
+│   │   └── unidealApi.js
+│   │
+│   ├── components/
+│   │   ├── shared/
+│   │   └── ui/
+│   │
+│   ├── entities/
+│   │
+│   ├── hooks/
+│   │
+│   ├── lib/
+│   │
+│   ├── pages/
+│   │   │
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── ForgotPassword.jsx
+│   │   ├── ResetPassword.jsx
+│   │   │
+│   │   ├── Profile.jsx
+│   │   ├── EditProfile.jsx
+│   │   ├── Verification.jsx
+│   │   ├── AdminVerification.jsx
+│   │   │
+│   │   ├── AdminPanel.jsx
+│   │   ├── AdminUser.jsx
+│   │   ├── BlockReport.jsx
+│   │   └── ReportDetails.jsx
+│   │
+│   ├── utils/
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
 
 ## 🗂️ Module to Frontend Script Mapping
 
@@ -121,16 +203,6 @@ Run the app: `npm run dev`
 
 - [@ojjjall](https://github.com/ojjjall) - Project Lead
 - [Add your team members here]
-
-  ## User Management Subsystem
-
-**Developer:** Garrah Thabit
-
-| Module Number | Module Name | FrontEnd | BackEnd |
-|---|---|---|---|
-| 1 | User Registration & Login Module | • [Login.jsx](./src/pages/Login.jsx)<br>• [Register.jsx](./src/pages/Register.jsx)<br>• [ForgotPassword.jsx](./src/pages/ForgotPassword.jsx)<br>• [ResetPassword.jsx](./src/pages/ResetPassword.jsx) | — |
-| 2 | Profile & Verification Module | • [Profile.jsx](./src/pages/Profile.jsx)<br>• [EditProfile.jsx](./src/pages/EditProfile.jsx)<br>• [Verification.jsx](./src/pages/Verification.jsx)<br>• [AdminVerification.jsx](./src/pages/AdminVerification.jsx) | • [unidealApi.js](./src/api/unidealApi.js) |
-| 3 | Access Control & Authorization Module | • [AdminPanel.jsx](./src/pages/AdminPanel.jsx)<br>• [AdminUser.jsx](./src/pages/AdminUser.jsx)<br>• [BlockReport.jsx](./src/pages/BlockReport.jsx)<br>• [ReportDetails.jsx](./src/pages/ReportDetails.jsx) | — |
 
 ## 📚 Documentation & Support
 
