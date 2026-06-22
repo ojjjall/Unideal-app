@@ -67,6 +67,23 @@ Any change pushed to the repo will also be reflected in the Base44 Builder.
 
 **Developer:** Garrah Thabit
 
+| Module Number | Module Name | FrontEnd | BackEnd |
+|---|---|---|---|
+| 1 | User Registration & Login Module | • [Login.jsx](./src/pages/Login.jsx)<br>• [Register.jsx](./src/pages/Register.jsx)<br>• [ForgotPassword.jsx](./src/pages/ForgotPassword.jsx)<br>• [ResetPassword.jsx](./src/pages/ResetPassword.jsx) | • AuthController.js<br>• AuthService.js<br>• AuthRoutes.js |
+| 2 | Profile & Verification Module | • [Profile.jsx](./src/pages/Profile.jsx)<br>• [EditProfile.jsx](./src/pages/EditProfile.jsx)<br>• [Verification.jsx](./src/pages/Verification.jsx)<br>• [AdminVerification.jsx](./src/pages/AdminVerification.jsx) | — |
+| 3 | Access Control & Authorization Module | • [AdminPanel.jsx](./src/pages/AdminPanel.jsx)<br>• [AdminUser.jsx](./src/pages/AdminUser.jsx)<br>• [BlockReport.jsx](./src/pages/BlockReport.jsx)<br>• [ReportDetails.jsx](./src/pages/ReportDetails.jsx) | — |
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---------|-----------|
+| Frontend | React.js (Vite) |
+| UI Framework | Tailwind CSS + shadcn/ui |
+| Backend | Node.js + Express.js |
+| Database | MySQL |
+| Design | Figma |
+| Version Control | Git + GitHub |
+
 ## 📁 Project Structure
 
 ```text
@@ -177,7 +194,7 @@ Unideal-app/
 
 ### Prerequisites
 
-1. Clone the repository using the project's Git URL 
+1. Clone the repository using the project's Git URL : https://github.com/ojjjall/Unideal-app.git
 2. Navigate to the project directory
 3. Install dependencies: `npm install`
 4. Create an `.env.local` file and set the right environment variables
