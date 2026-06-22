@@ -122,6 +122,16 @@ Run the app: `npm run dev`
 - [@ojjjall](https://github.com/ojjjall) - Project Lead
 - [Add your team members here]
 
+  ## User Management Subsystem
+
+**Developer:** Garrah Thabit
+
+| Module Number | Module Name | FrontEnd | BackEnd |
+|---|---|---|---|
+| 1 | User Registration & Login Module | • [Login.jsx](./src/pages/Login.jsx)<br>• [Register.jsx](./src/pages/Register.jsx)<br>• [ForgotPassword.jsx](./src/pages/ForgotPassword.jsx)<br>• [ResetPassword.jsx](./src/pages/ResetPassword.jsx) | — |
+| 2 | Profile & Verification Module | • [Profile.jsx](./src/pages/Profile.jsx)<br>• [EditProfile.jsx](./src/pages/EditProfile.jsx)<br>• [Verification.jsx](./src/pages/Verification.jsx)<br>• [AdminVerification.jsx](./src/pages/AdminVerification.jsx) | • [unidealApi.js](./src/api/unidealApi.js) |
+| 3 | Access Control & Authorization Module | • [AdminPanel.jsx](./src/pages/AdminPanel.jsx)<br>• [AdminUser.jsx](./src/pages/AdminUser.jsx)<br>• [BlockReport.jsx](./src/pages/BlockReport.jsx)<br>• [ReportDetails.jsx](./src/pages/ReportDetails.jsx) | — |
+
 ## 📚 Documentation & Support
 
 - [Base44 Documentation](https://docs.base44.com/Integrations/Using-GitHub)
