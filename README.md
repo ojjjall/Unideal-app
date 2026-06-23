@@ -119,15 +119,6 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 | 3 | Help Centre & Support Module | • [FAQ.jsx](./src/pages/FAQ.jsx)<br>• [SupportTicket.jsx](./src/pages/SupportTicket.jsx)<br>• [FeedbackForm.jsx](./src/components/FeedbackForm.jsx) | • SupportController.js<br>• SupportTicketService.js<br>• SupportRoutes.js |
 
 
-## Communication & Support Subsystem
-
-*Developer:* ZENG YUXI
-
-| Module Number | Module Name | FrontEnd | BackEnd |
-|---|---|---|---|
-| 1 | Chat & Messaging Module | • [ChatWidget.jsx](./src/components/ChatWidget.jsx)<br>• [MessagingPanel.jsx](./src/components/MessagingPanel.jsx)<br>• [ConversationList.jsx](./src/components/ConversationList.jsx) | • ChatController.js<br>• MessageService.js<br>• ChatRoutes.js |
-| 2 | Meetup Management Module | • [MeetupScheduler.jsx](./src/components/MeetupScheduler.jsx)<br>• [MeetupDetails.jsx](./src/components/MeetupDetails.jsx)<br>• [MapView.jsx](./src/components/MapView.jsx) | • MeetupController.js<br>• MeetupService.js<br>• MeetupRoutes.js |
-| 3 | Help Centre & Support Module | • [FAQ.jsx](./src/pages/FAQ.jsx)<br>• [SupportTicket.jsx](./src/pages/SupportTicket.jsx)<br>• [FeedbackForm.jsx](./src/components/FeedbackForm.jsx) | • SupportController.js<br>• SupportTicketService.js<br>• SupportRoutes.js |
 
 ## 🛠️ Tech Stack
 
