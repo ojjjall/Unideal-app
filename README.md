@@ -118,7 +118,15 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 | 2 | Meetup Management Module | • [MeetupScheduler.jsx](./src/components/MeetupScheduler.jsx)<br>• [MeetupDetails.jsx](./src/components/MeetupDetails.jsx)<br>• [MapView.jsx](./src/components/MapView.jsx) | • MeetupController.js<br>• MeetupService.js<br>• MeetupRoutes.js |
 | 3 | Help Centre & Support Module | • [FAQ.jsx](./src/pages/FAQ.jsx)<br>• [SupportTicket.jsx](./src/pages/SupportTicket.jsx)<br>• [FeedbackForm.jsx](./src/components/FeedbackForm.jsx) | • SupportController.js<br>• SupportTicketService.js<br>• SupportRoutes.js |
 
+## Service & Asset Sharing Subsystem
 
+**Developer:** Zahra Aulia Putri
+
+| Module Number | Module Name | FrontEnd | BackEnd |
+|---|---|---|---|
+| 1 | Academic Service Request & Offer Module | • [ServiceList.jsx](./src/pages/ServiceList.jsx)<br>• [AddService.jsx](./src/pages/AddService.jsx)<br>• [ServiceDetails.jsx](./src/pages/ServiceDetails.jsx)<br>• [ServiceRequest.jsx](./src/pages/ServiceRequest.jsx) | • ServiceController.js<br>• ServiceService.js<br>• ServiceRoutes.js |
+| 2 | Asset Borrowing & Lending Module | • [AssetList.jsx](./src/pages/AssetList.jsx)<br>• [AddAsset.jsx](./src/pages/AddAsset.jsx)<br>• [AssetDetails.jsx](./src/pages/AssetDetails.jsx)<br>• [MyAssets.jsx](./src/pages/MyAssets.jsx) | • AssetController.js<br>• AssetService.js<br>• AssetRoutes.js |
+| 3 | Booking & Deposit Management Module | • [BookingForm.jsx](./src/pages/BookingForm.jsx)<br>• [BookingDetails.jsx](./src/pages/BookingDetails.jsx)<br>• [MyBookings.jsx](./src/pages/MyBookings.jsx)<br>• [DepositManagement.jsx](./src/pages/DepositManagement.jsx) | • BookingController.js<br>• BookingService.js<br>• BookingRoutes.js |
 
 ## 🛠️ Tech Stack
 
