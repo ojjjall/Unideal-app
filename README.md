@@ -88,6 +88,16 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 | 2 | Profile & Verification Module | • [Profile.jsx](./src/pages/Profile.jsx)<br>• [EditProfile.jsx](./src/pages/EditProfile.jsx)<br>• [Verification.jsx](./src/pages/Verification.jsx)<br>• [AdminVerification.jsx](./src/pages/AdminVerification.jsx) | — |
 | 3 | Access Control & Authorization Module | • [AdminPanel.jsx](./src/pages/AdminPanel.jsx)<br>• [AdminUser.jsx](./src/pages/AdminUser.jsx)<br>• [BlockReport.jsx](./src/pages/BlockReport.jsx)<br>• [ReportDetails.jsx](./src/pages/ReportDetails.jsx) | — |
 
+## Product & Market Subsystem
+
+**Developer:** Lauza Amru Kasyafa
+
+| Module Number | Module Name | FrontEnd | BackEnd |
+| ------------- | ----------- | -------- | ------- |
+| 1 | Product Listing & Management Module | • [AddProduct.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/AddProduct.jsx) &nbsp; • [MyItem.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/MyItem.jsx) &nbsp; • [ProductDetails.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/ProductDetails.jsx) | • ProductController.js &nbsp; • ProductService.js &nbsp; • ProductRoutes.js |
+| 2 | Search & Filter Module | • [Home.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Home.jsx) | — |
+| 3 | Transaction & Payment Module | • [Checkout.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Checkout.jsx) &nbsp; • [Payment.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Payment.jsx) &nbsp; • [OrderReceipt.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/OrderReceipt.jsx) &nbsp; • [MyOrder.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/MyOrder.jsx) &nbsp; • [Wallet.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Wallet.jsx) &nbsp; • [TopUp.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/TopUp.jsx) | — |
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
