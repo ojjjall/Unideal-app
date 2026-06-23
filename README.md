@@ -100,13 +100,11 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 
 ## Analytics & Insights Subsystem
 
-**Developer:** Saleh Nabil
+**Developer:** Saleh Nabil Ahmed
 
 | Module Number | Module Name | FrontEnd | BackEnd |
 |---|---|---|---|
-| 1 | User Activity Dashboard Module | • [UserActivityDashboard.jsx](./src/pages/UserActivityDashboard.jsx)<br>• [ActivityFilters.jsx](./src/components/ActivityFilters.jsx)<br>• [UserAnalyticsChart.jsx](./src/components/UserAnalyticsChart.jsx)<br>• [SessionMetricsCard.jsx](./src/components/SessionMetricsCard.jsx) | • AnalyticsController.js<br>• ActivityService.js<br>• AnalyticsRoutes.js |
-| 2 | Sales & Performance Module | • [AdminSalesDashboard.jsx](./src/pages/AdminSalesDashboard.jsx)<br>• [StudentSalesDashboard.jsx](./src/pages/StudentSalesDashboard.jsx)<br>• [SalesMetricsCard.jsx](./src/components/SalesMetricsCard.jsx)<br>• [RevenueChart.jsx](./src/components/RevenueChart.jsx)<br>• [TopProductsTable.jsx](./src/components/TopProductsTable.jsx)<br>• [CategoryPerformanceChart.jsx](./src/components/CategoryPerformanceChart.jsx) | • SalesController.js<br>• SalesService.js<br>• PerformanceRoutes.js |
-| 3 | Buyer Spending Summary Module | • [BuyerSpendingSummary.jsx](./src/pages/BuyerSpendingSummary.jsx)<br>• [SpendingByCategoryChart.jsx](./src/components/SpendingByCategoryChart.jsx)<br>• [SpendingTrendsChart.jsx](./src/components/SpendingTrendsChart.jsx)<br>• [TopBuyersTable.jsx](./src/components/TopBuyersTable.jsx)<br>• [CategoryBreakdownCard.jsx](./src/components/CategoryBreakdownCard.jsx) | • SpendingController.js<br>• SpendingService.js<br>• SpendingRoutes.js |
+| 1 | User Activity Dashboard Module | • [UserActivityDashboard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/UserActivityDashboard.jsx)<br>• [ActivityFilters.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/ActivityFilters.jsx)<br>• [UserAnalyticsChart.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/UserAnalyticsChart.jsx)<br>• [SessionMetricsCard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/SessionMetricsCard.jsx) | • [AnalyticsController.js](https://github.com/ojjjall/Unideal-app/blob/main/src/api/AnalyticsController.js)<br>• [ActivityService.js](https://github.com/ojjjall/Unideal-app/blob/main/src/api/ActivityService.js)<br>• [AnalyticsRoutes.js](https://github.com/ojjjall/Unideal-app/blob/main/src/api/AnalyticsRoutes.js) |
 
 ## Communication & Support Subsystem
 
