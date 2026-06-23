@@ -108,6 +108,16 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 | 2 | Sales & Performance Module | • [AdminSalesDashboard.jsx](./src/pages/AdminSalesDashboard.jsx)<br>• [StudentSalesDashboard.jsx](./src/pages/StudentSalesDashboard.jsx)<br>• [SalesMetricsCard.jsx](./src/components/SalesMetricsCard.jsx)<br>• [RevenueChart.jsx](./src/components/RevenueChart.jsx)<br>• [TopProductsTable.jsx](./src/components/TopProductsTable.jsx)<br>• [CategoryPerformanceChart.jsx](./src/components/CategoryPerformanceChart.jsx) | • SalesController.js<br>• SalesService.js<br>• PerformanceRoutes.js |
 | 3 | Buyer Spending Summary Module | • [BuyerSpendingSummary.jsx](./src/pages/BuyerSpendingSummary.jsx)<br>• [SpendingByCategoryChart.jsx](./src/components/SpendingByCategoryChart.jsx)<br>• [SpendingTrendsChart.jsx](./src/components/SpendingTrendsChart.jsx)<br>• [TopBuyersTable.jsx](./src/components/TopBuyersTable.jsx)<br>• [CategoryBreakdownCard.jsx](./src/components/CategoryBreakdownCard.jsx) | • SpendingController.js<br>• SpendingService.js<br>• SpendingRoutes.js |
 
+## Communication & Support Subsystem
+
+*Developer:* ZENG YUXI
+
+| Module Number | Module Name | FrontEnd | BackEnd |
+|---|---|---|---|
+| 1 | Chat & Messaging Module | • [ChatWidget.jsx](./src/components/ChatWidget.jsx)<br>• [MessagingPanel.jsx](./src/components/MessagingPanel.jsx)<br>• [ConversationList.jsx](./src/components/ConversationList.jsx) | • ChatController.js<br>• MessageService.js<br>• ChatRoutes.js |
+| 2 | Meetup Management Module | • [MeetupScheduler.jsx](./src/components/MeetupScheduler.jsx)<br>• [MeetupDetails.jsx](./src/components/MeetupDetails.jsx)<br>• [MapView.jsx](./src/components/MapView.jsx) | • MeetupController.js<br>• MeetupService.js<br>• MeetupRoutes.js |
+| 3 | Help Centre & Support Module | • [FAQ.jsx](./src/pages/FAQ.jsx)<br>• [SupportTicket.jsx](./src/pages/SupportTicket.jsx)<br>• [FeedbackForm.jsx](./src/components/FeedbackForm.jsx) | • SupportController.js<br>• SupportTicketService.js<br>• SupportRoutes.js |
+
 
 ## Communication & Support Subsystem
 
