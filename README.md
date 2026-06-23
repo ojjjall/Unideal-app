@@ -88,6 +88,19 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 | 2 | Profile & Verification Module | • [Profile.jsx](./src/pages/Profile.jsx)<br>• [EditProfile.jsx](./src/pages/EditProfile.jsx)<br>• [Verification.jsx](./src/pages/Verification.jsx)<br>• [AdminVerification.jsx](./src/pages/AdminVerification.jsx) | — |
 | 3 | Access Control & Authorization Module | • [AdminPanel.jsx](./src/pages/AdminPanel.jsx)<br>• [AdminUser.jsx](./src/pages/AdminUser.jsx)<br>• [BlockReport.jsx](./src/pages/BlockReport.jsx)<br>• [ReportDetails.jsx](./src/pages/ReportDetails.jsx) | — |
 
+
+
+## Analytics & Insights Subsystem
+
+**Developer:** Saleh Nabil
+
+| Module Number | Module Name | FrontEnd | BackEnd |
+|---|---|---|---|
+| 1 | User Activity Dashboard Module | • [UserActivityDashboard.jsx](./src/pages/UserActivityDashboard.jsx)<br>• [ActivityFilters.jsx](./src/components/ActivityFilters.jsx)<br>• [UserAnalyticsChart.jsx](./src/components/UserAnalyticsChart.jsx)<br>• [SessionMetricsCard.jsx](./src/components/SessionMetricsCard.jsx) | • AnalyticsController.js<br>• ActivityService.js<br>• AnalyticsRoutes.js |
+| 2 | Sales & Performance Module | • [AdminSalesDashboard.jsx](./src/pages/AdminSalesDashboard.jsx)<br>• [StudentSalesDashboard.jsx](./src/pages/StudentSalesDashboard.jsx)<br>• [SalesMetricsCard.jsx](./src/components/SalesMetricsCard.jsx)<br>• [RevenueChart.jsx](./src/components/RevenueChart.jsx)<br>• [TopProductsTable.jsx](./src/components/TopProductsTable.jsx)<br>• [CategoryPerformanceChart.jsx](./src/components/CategoryPerformanceChart.jsx) | • SalesController.js<br>• SalesService.js<br>• PerformanceRoutes.js |
+| 3 | Buyer Spending Summary Module | • [BuyerSpendingSummary.jsx](./src/pages/BuyerSpendingSummary.jsx)<br>• [SpendingByCategoryChart.jsx](./src/components/SpendingByCategoryChart.jsx)<br>• [SpendingTrendsChart.jsx](./src/components/SpendingTrendsChart.jsx)<br>• [TopBuyersTable.jsx](./src/components/TopBuyersTable.jsx)<br>• [CategoryBreakdownCard.jsx](./src/components/CategoryBreakdownCard.jsx) | • SpendingController.js<br>• SpendingService.js<br>• SpendingRoutes.js |
+
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
