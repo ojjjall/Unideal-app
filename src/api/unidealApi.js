@@ -2,6 +2,48 @@
 import { base44 } from './base44Client';
 
 // ============================================================
+// AUTH API - MYSQL BACKEND
+// ============================================================
+const AUTH_API_BASE_URL = 'http://localhost:5000/api/auth';
+
+export const AuthAPI = {
+  register: async (data) => {
+    const response = await fetch(`${AUTH_API_BASE_URL}/register`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    return await response.json();
+  },
+
+  login: async (data) => {
+    const response = await fetch(`${AUTH_API_BASE_URL}/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    return await response.json();
+  }
+};
+updateProfile: async (id, data) => {
+  const response = await fetch(`${AUTH_API_BASE_URL}/profile/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+
+  return await response.json();
+}
+
+// ============================================================
 // ADMIN ACTIONS API (defined first)
 // ============================================================
 export const AdminActionsAPI = {

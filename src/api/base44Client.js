@@ -1,10 +1,6 @@
-// @ts-nocheck
-import { Base44 } from '@base44/sdk';
+// Temporary local mock for MySQL backend demo.
+// Base44 SDK is disabled during local frontend/backend testing.
 
-// Use import.meta.env for Vite
-const appId = import.meta.env?.VITE_BASE44_APP_ID || '';
-
-export const base44 = new Base44({
-  appId: appId,
-  // Add other config if needed
-});
+export const base44 = {
+  entities: {}
+};

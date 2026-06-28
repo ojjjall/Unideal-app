@@ -6,7 +6,6 @@ import {
   User,
   Mail,
   ShieldCheck,
-  FileText,
   ShoppingBag,
   Wallet,
   Settings,
@@ -16,10 +15,17 @@ import {
 import FigureLabel from '@/components/shared/FigureLabel';
 
 export default function Profile() {
+  const savedUser = JSON.parse(localStorage.getItem('unideal_user'));
+
+  const handleLogout = () => {
+    localStorage.removeItem('unideal_user');
+    window.location.href = '/login';
+  };
+
   const menuItems = [
     { title: 'My Details', icon: User, path: '/edit-profile' },
     { title: 'Verification', icon: ShieldCheck, path: '/verification' },
-    { title: 'My Orders', icon: ShoppingBag, path: '/orders' },
+    { title: 'My Orders', icon: ShoppingBag, path: '/my-orders' },
     { title: 'Wallet', icon: Wallet, path: '/wallet' },
     { title: 'Settings', icon: Settings, path: '/settings' }
   ];
@@ -27,7 +33,6 @@ export default function Profile() {
   return (
     <div className="min-h-screen bg-background px-4 py-6">
       <div className="max-w-md mx-auto space-y-6">
-
         <h1 className="text-2xl font-bold">Profile</h1>
 
         <Card className="shadow-sm">
@@ -36,11 +41,13 @@ export default function Profile() {
               <User className="w-12 h-12" />
             </div>
 
-            <h2 className="text-xl font-semibold">Garrah Thabit Mohammed</h2>
+            <h2 className="text-xl font-semibold">
+              {savedUser?.matric || 'UTM Student'}
+            </h2>
 
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mt-1">
               <Mail className="w-4 h-4" />
-              <span>garrah@graduate.utm.my</span>
+              <span>{savedUser?.email || 'student@graduate.utm.my'}</span>
             </div>
 
             <div className="inline-flex items-center gap-2 mt-3 px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm">
@@ -54,6 +61,7 @@ export default function Profile() {
           <CardContent className="p-0">
             {menuItems.map((item, index) => {
               const Icon = item.icon;
+
               return (
                 <Link
                   key={index}
@@ -71,7 +79,7 @@ export default function Profile() {
           </CardContent>
         </Card>
 
-        <Button variant="destructive" className="w-full">
+        <Button variant="destructive" className="w-full" onClick={handleLogout}>
           <LogOut className="w-4 h-4 mr-2" />
           Logout
         </Button>
