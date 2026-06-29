@@ -80,3 +80,45 @@ exports.updateProfile = async (req, res) => {
 
   }
 };
+exports.forgotPassword = async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    const result = await authService.forgotPassword(email);
+
+    if (!result) {
+      return res.status(404).json({
+        success: false,
+        message: 'Email not found'
+      });
+    }
+
+    res.json({
+      success: true,
+      message: 'Email verified. You may reset your password.'
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
+  }
+};
+
+exports.resetPassword = async (req, res) => {
+  try {
+    const { email, newPassword } = req.body;
+
+    await authService.resetPassword(email, newPassword);
+
+    res.json({
+      success: true,
+      message: 'Password reset successfully'
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
+  }
+};

@@ -4,6 +4,7 @@ import { base44 } from './base44Client';
 // ============================================================
 // AUTH API - MYSQL BACKEND
 // ============================================================
+
 const AUTH_API_BASE_URL = 'http://localhost:5000/api/auth';
 
 export const AuthAPI = {
@@ -29,19 +30,44 @@ export const AuthAPI = {
     });
 
     return await response.json();
+  },
+
+  updateProfile: async (id, data) => {
+    const response = await fetch(`${AUTH_API_BASE_URL}/profile/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    return await response.json();
+  },
+
+  forgotPassword: async (data) => {
+    const response = await fetch(`${AUTH_API_BASE_URL}/forgot-password`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    return await response.json();
+  },
+
+  resetPassword: async (data) => {
+    const response = await fetch(`${AUTH_API_BASE_URL}/reset-password`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    return await response.json();
   }
 };
-updateProfile: async (id, data) => {
-  const response = await fetch(`${AUTH_API_BASE_URL}/profile/${id}`, {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  });
-
-  return await response.json();
-}
 
 // ============================================================
 // ADMIN ACTIONS API (defined first)
