@@ -98,14 +98,13 @@ UniDeal is a web-based marketplace designed exclusively for Universiti Teknologi
 | 2 | Search & Filter Module | • [Home.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Home.jsx) | — |
 | 3 | Transaction & Payment Module | • [Checkout.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Checkout.jsx) &nbsp; • [Payment.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Payment.jsx) &nbsp; • [OrderReceipt.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/OrderReceipt.jsx) &nbsp; • [MyOrder.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/MyOrder.jsx) &nbsp; • [Wallet.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/Wallet.jsx) &nbsp; • [TopUp.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/TopUp.jsx) | — |
 
-## Analytics & Insights Subsystem
-
 **Developer:** Saleh Nabil Ahmed
 
 | Module Number | Module Name | FrontEnd | BackEnd |
 |---|---|---|---|
 | 1 | User Activity Dashboard Module | • [UserActivityDashboard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/UserActivityDashboard.jsx)<br>• [ActivityFilters.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/ActivityFilters.jsx)<br>• [UserAnalyticsChart.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/UserAnalyticsChart.jsx)<br>• [SessionMetricsCard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/SessionMetricsCard.jsx) | ✅ **Implemented:**<br>• [AnalyticsController.js](https://github.com/ojjjall/Unideal-app/blob/main/backend/controllers/AnalyticsController.js)<br>• [ActivityService.js](https://github.com/ojjjall/Unideal-app/blob/main/backend/services/ActivityService.js)<br>• [AnalyticsRoutes.js](https://github.com/ojjjall/Unideal-app/blob/main/backend/routes/AnalyticsRoutes.js) |
-
+| 2 | Sales & Performance Module | • [AdminSalesDashboard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/AdminSalesDashboard.jsx)<br>• [StudentSalesDashboard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/StudentSalesDashboard.jsx)<br>• [SalesMetricsCard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/SalesMetricsCard.jsx)<br>• [RevenueChart.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/RevenueChart.jsx)<br>• [TopProductsTable.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/TopProductsTable.jsx)<br>• [CategoryPerformanceChart.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/CategoryPerformanceChart.jsx) | — |
+| 3 | Buyer Spending Summary Module | • [BuyerSpendingSummary.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/pages/BuyerSpendingSummary.jsx)<br>• [SpendingByCategoryChart.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/SpendingByCategoryChart.jsx)<br>• [SpendingTrendsChart.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/SpendingTrendsChart.jsx)<br>• [TopBuyersTable.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/TopBuyersTable.jsx)<br>• [CategoryBreakdownCard.jsx](https://github.com/ojjjall/Unideal-app/blob/main/src/components/CategoryBreakdownCard.jsx) | — |
 *Developer:* ZENG YUXI
 
 | Module Number | Module Name | FrontEnd | BackEnd |
